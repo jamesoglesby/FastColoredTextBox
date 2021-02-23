@@ -32,6 +32,13 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("2.16.26.0")]
-[assembly: AssemblyFileVersion("2.16.26.0")]
- 
+[assembly: AssemblyVersion("2.16.26.1")]
+[assembly: AssemblyFileVersion("2.16.26.1")]
+
+/*
+* Release Notes - XX/XX/XXXX - 2.16.26.1
+* - GHXX - Added an advanced find and replace form with the ability to search through files - can be accessed via fctb.ShowAdvancedFindAndReplace(); @jamesoglesby
+* - GHXX - Added a Sample Test Form in the C# Tester app for Advanced Find And Replace @jamesoglesby
+* 
+
+*/ 

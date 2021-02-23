@@ -47,6 +47,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdvancedFindAndReplace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdvancedFindAndReplace.Designer.cs">
+      <DependentUpon>AdvancedFindAndReplace.cs</DependentUpon>
+    </Compile>
     <Compile Include="AutocompleteSample.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -301,6 +307,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AdvancedFindAndReplace.resx">
+      <DependentUpon>AdvancedFindAndReplace.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AutocompleteSample.resx">
       <DependentUpon>AutocompleteSample.cs</DependentUpon>
     </EmbeddedResource>

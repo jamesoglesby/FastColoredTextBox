@@ -217,5 +217,10 @@ namespace Tester
         {
             new CustomTextSourceSample2().Show();
         }
+
+        private void button40_Click(object sender, EventArgs e)
+        {
+            new AdvancedFindAndReplace().Show();
+        }
     }
 }

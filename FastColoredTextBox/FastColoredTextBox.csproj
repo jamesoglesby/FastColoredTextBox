@@ -47,6 +47,12 @@
     <Reference Include="System.XML" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdvancedFindAndReplace.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdvancedFindAndReplace.Designer.cs">
+      <DependentUpon>AdvancedFindAndReplace.cs</DependentUpon>
+    </Compile>
     <Compile Include="AutocompleteItem.cs" />
     <Compile Include="AutocompleteMenu.cs">
       <SubType>Component</SubType>
@@ -117,6 +123,9 @@
     <Compile Include="VisualMarker.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AdvancedFindAndReplace.resx">
+      <DependentUpon>AdvancedFindAndReplace.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FastColoredTextBox.resx">
       <DependentUpon>FastColoredTextBox.cs</DependentUpon>
     </EmbeddedResource>

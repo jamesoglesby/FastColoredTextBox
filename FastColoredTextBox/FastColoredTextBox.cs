@@ -1324,6 +1324,9 @@ namespace FastColoredTextBoxNS
         [Browsable(false)]
         public ReplaceForm replaceForm { get; private set; }
 
+        [Browsable(false)]
+        public AdvancedFindAndReplace advancedFindAndReplace { get; private set; }
+
         /// <summary>
         /// Do not change this property
         /// </summary>
@@ -2387,6 +2390,28 @@ namespace FastColoredTextBoxNS
                 throw new Exception("Maximum count of Styles is exceeded.");
 
             return i;
+        }
+        /// <summary>
+        /// Shows a find and replace dialog
+        /// </summary>
+        public virtual void ShowAdvancedFindAndReplaceDialog()
+        {
+            ShowAdvancedFindAndReplaceDialog(null);
+        }
+
+        public virtual void ShowAdvancedFindAndReplaceDialog(string findText)
+        {
+            if (advancedFindAndReplace == null)
+                advancedFindAndReplace = new AdvancedFindAndReplace(this);
+
+            if (findText != null)
+                advancedFindAndReplace.tbFind.Text = findText;
+            else if (!Selection.IsEmpty && Selection.Start.iLine == Selection.End.iLine)
+                advancedFindAndReplace.tbFind.Text = Selection.Text;
+
+            advancedFindAndReplace.tbFind.SelectAll();
+            advancedFindAndReplace.Show();
+            advancedFindAndReplace.Focus();
         }
 
         /// <summary>

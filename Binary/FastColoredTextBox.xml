@@ -4,6 +4,23 @@
         <name>FastColoredTextBox</name>
     </assembly>
     <members>
+        <member name="F:FastColoredTextBoxNS.AdvancedFindAndReplace.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:FastColoredTextBoxNS.AdvancedFindAndReplace.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:FastColoredTextBoxNS.AdvancedFindAndReplace.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
         <member name="T:FastColoredTextBoxNS.AutocompleteItem">
             <summary>
             Item of autocomplete menu
@@ -1647,6 +1664,11 @@
             </summary>
             <returns>Index of free styles buffer slot</returns>
             <exception cref="T:System.Exception">If maximum count of styles is exceeded</exception>
+        </member>
+        <member name="M:FastColoredTextBoxNS.FastColoredTextBox.ShowAdvancedFindAndReplaceDialog">
+            <summary>
+            Shows a find and replace dialog
+            </summary>
         </member>
         <member name="M:FastColoredTextBoxNS.FastColoredTextBox.ShowFindDialog">
             <summary>
